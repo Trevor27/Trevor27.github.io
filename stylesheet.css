@@ -1,66 +1,240 @@
-
-
-html{
-    overflow-x: hidden;
-}
-.navabar-brand a img{
-    width: 250px;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: #10101a;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(214, 214, 214, 0.336);
 }
 
-img{
-    max-width: 100%;
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  ); /*,  url('./Assets/Images/bg.jpg')*/
+  background-position: center;
+  background-size: cover;
+}
+#nav {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 200px;
+  position: fixed;
+  width: 100%;
+}
+.nav-close,
+.nav-open {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
 }
 
-*{
-    outline: none !important;
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 15px 15px;
 }
 
-a{
-    color: #ffc107;
+.nav-item:hover {
+  background-color: crimson;
+  font-weight: 700;
+  transition: ease;
 }
 
-a:hover{
-    color: #ffc107;
-    text-decoration: none;
+#header .hero {
+  text-align: center;
+  color: white;
+  padding: 10% 100px;
+}
+#header .hero h1 span {
+  color: crimson;
+}
+#header .hero h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
 }
 
-.header-left{
-    width: 80px;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    background: #0c0c14;
-    border-right: 1px solid rgba(11,11,19,0.1);
-    z-index: 99999;
+.hero button {
+  margin-top: 10px;
+  width: 200px;
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.header-left .top a{
-    background: #ffc107;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 40px;
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
+.hero button:hover {
+  background-color: crimson;
+  transition: 0.5s all ease-in;
 }
 
-.header-left .nav-menu{
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
-
-.nav-menu li{
+@media (max-width: 750px) {
+  #nav {
+    padding: 0;
+    z-index: 100;
+    position: absolute;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    display: none;
+    height: 100vh;
+  }
+  .nav-close {
+    display: block;
+    padding: 15px;
+    color: crimson;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    bottom: 0;
+  }
+  .nav-open {
+    display: block;
+    padding: 20px;
+    fill: crimson;
+    text-transform: uppercase;
+    position: fixed;
+    right: 0;
+    border: none;
+    z-index: 99;
+    height: 48px;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+
+  #header .hero {
+    padding: 50% 20px;
+  }
+  #header .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Header Section Complete */
+
+/* aBOUT section */
+
+.section-title {
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: crimson;
+}
+
+.section-title p {
+  font-size: 1.2rem;
+}
+
+#about .details {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+.details img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 5px 5px 8px #000000;
+}
+
+.details .image {
+  position: relative;
+}
+
+.details p {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 750px) {
+  #about .details {
+    width: 80%;
+  }
+  .details p {
+    font-size: 1rem;
+  }
+}
+
+/* Skills section */
+#skills {
+  padding: 0 200px;
+}
+.skills-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#skills .skill {
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.skill {
+  position: relative;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 50%),
+    url('/Assets/Images/tech.png');
+  color: white;
+}
+
+.skill-title {
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+.skill-title img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.skill-title h4 {
+  text-align: right;
+}
+
+.skill p {
+  padding-top: 10px;
+}
+@media (max-width: 750px) {
+  .skills-row {
+    flex-direction: column;
+  }
+  #skills {
+    padding: 20px;
+  }
+}
+
+/* Contact section */
+
+.contact {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact .method img {
+  width: 38px;
+  height: 38px;
 }

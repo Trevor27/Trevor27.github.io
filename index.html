@@ -1,79 +1,145 @@
-
 <!DOCTYPE html>
-<html lang='en'>
-
-    <style>
-        body {
-          background-image: url("https://mcdn.wallpapersafari.com/medium/97/73/lrF7O8.png");
-        }
-        </style>
-<head>
-    <meta charset="UTF-8">
-    <title>Data Scientist</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/
-    fontawesome-free@5.15.3/css/fontawesome.min.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/
-    bootstrap@4.6.0/dist/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
-    <div class="mob-header">
-        <div class="d-flex">
-            <div class="navbar-brand">
-                <a href="">
-                    <img src="log.png" alt="">
-                </a>
-            </div>
-            <button class="toggler-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Mpho Mashau</title>
+  </head>
+  <body>
+    <header id="header">
+      <i class="nav-open" id="nav-open" onclick="openNav()">
+        <img src="./Assets/Images/menu3.svg" alt="" />
+      </i>
+      <div id="nav">
+        <div class="nav-links">
+          <a class="nav-item" href="#about">About</a>
+          <a class="nav-item" href="#skills">Skills</a>
+          <a class="nav-item" href="#projects">Projects</a>
+          <a class="nav-item" href="#contact">Contact</a>
+          <button class="nav-close" id="nav-close" onclick="closeNav()">
+            close
+          </button>
         </div>
-    </div>
-
-    <header class="header-left" id="navbar-collapse-toggle">
-        <div class="top">
-            <a href="">M</a>
-        </div>
-
-        <ul class="nav nav-menu">
-            <li>
-                <a href="" class="nav-link active" data-toggle="tooltip" title="HOME">
-                    <i class="fa fa-user-o"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="" class="nav-link active" data-toggle="tooltip" title="ABOUT">
-                    <i class="fa fa-user-o"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="" class="nav-link active" data-toggle="tooltip" title="SKILLS">
-                    <i class="fa fa-user-o"></i>
-                </a>
-            </li>
-        </ul>
+      </div>
+      <div class="hero">
+        <h1>Hi my Name is <br /><span>Mpho Trever Mashau</span></h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting<br />
+          industry. Lorem Ipsum has been the industry's standard
+        </p>
+        <button class="btn-hero">Download My CV</button>
+      </div>
     </header>
 
+    <section id="about">
+      <div class="section-title">
+        <h2>About <span>ME</span></h2>
+        <p>This is what I have been up to</p>
+      </div>
+      <div class="details">
+        <div class="image">
+          <img src="./Assets/Images/11.jpg" alt="" />
+        </div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </section>
 
+    <section id="skills">
+      <div class="section-title">
+        <h2>My <span>Skills</span></h2>
+        <p>This is what I can do</p>
+      </div>
+      <div class="skills-row">
+        <div class="skill">
+          <div class="skill-title">
+            <img src="./Assets/Images/python.png" alt="" />
+            <h4>PYTHON</h4>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </p>
+        </div>
+        <div class="skill">
+          <div class="skill-title">
+            <img src="./Assets/Images/html.png" alt="" />
+            <h4>HTML</h4>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </p>
+        </div>
+        <div class="skill">
+          <div class="skill-title">
+            <img src="./Assets/Images/css.png" alt="" />
+            <h4>CSS</h4>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </p>
+        </div>
+        <div class="skill">
+          <div class="skill-title">
+            <img src="./Assets/Images/sql.png" alt="" />
+            <h4>SQL</h4>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section id="projects">
+      <div class="section-title">
+        <h2>My <span>Projects</span></h2>
+        <p>Projects I have worked on</p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-title">
+        <h2>My <span>Contacts</span></h2>
+        <p>You can reach me on</p>
+        <div class="contact">
+          <div class="method">
+            <img src="./Assets/Images/gmail.png" alt="" />
+            <h6>mmashau8@gmail.com</h6>
+          </div>
+          <div class="method">
+            <img src="./Assets/Images/call.png" alt="" />
+            <h6>+27 72 187 1314</h6>
+          </div>
+          <div class="method">
+            <img src="./Assets/Images/in.png" alt="" />
+            <h6>https:www.linkedin.com/in/mtmashau</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    let nav = document.getElementById('nav');
+    let nav_close = document.getElementById('nav-close');
+    let nav_open = document.getElementById('nav-open');
+    function closeNav() {
+      nav.style.display = 'none';
+      nav_open.style.display = 'block';
+    }
 
-
-
-
-
-
-
-
-
-
-    
-    
-
-</body>
+    function openNav() {
+      nav.style.display = 'block';
+      nav_open.style.display = 'none';
+    }
+  </script>
 </html>
