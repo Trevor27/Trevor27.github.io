@@ -181,7 +181,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  size: fixed; 
 }
 #skills .skill {
   border: 1px solid black;
