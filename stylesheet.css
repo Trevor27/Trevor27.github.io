@@ -179,6 +179,7 @@ body {
 }
 .skills-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -187,6 +188,7 @@ body {
   border-radius: 15px;
   margin: 10px;
   padding: 15px;
+  
 }
 
 .skill {
@@ -215,10 +217,12 @@ body {
 
 .skill p {
   padding-top: 10px;
+  text-align: center;
 }
 @media (max-width: 750px) {
   .skills-row {
     flex-direction: column;
+    flex-shrink: inherit;
   }
   #skills {
     padding: 20px;
