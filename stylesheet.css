@@ -16,7 +16,7 @@ body {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.9)
-  ); /*,  url('./Assets/Images/bg.jpg')*/
+  ),  url('./Assets/Images/bg.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -222,7 +222,6 @@ body {
 @media (max-width: 750px) {
   .skills-row {
     flex-direction: column;
-    flex-shrink: inherit;
   }
   #skills {
     padding: 20px;
